@@ -19,7 +19,11 @@ const getIndexOfApple = (foods) => {
 };
 
 // reduce
-const getSquaredTotal = () => { };
+const getSquaredTotal = (arrOfNumbers) => {
+  return arrOfNumbers.reduce((accumulator, currentValue) => {
+    return accumulator + currentValue * currentValue;
+  }, 0)
+};
 
 // every
 const hasOnlyEvenNumbers = () => { };
