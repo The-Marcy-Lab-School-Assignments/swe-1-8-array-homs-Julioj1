@@ -26,7 +26,13 @@ const getSquaredTotal = (arrOfNumbers) => {
 };
 
 // every
-const hasOnlyEvenNumbers = () => { };
+const hasOnlyEvenNumbers = (arrOfNumbers) => {
+  if (arrOfNumbers.length === 0) {
+    return false;
+  } else {
+    return arrOfNumbers.every((nums) => nums % 2 === 0)
+  }
+};
 
 // some
 const anyGreaterThan10 = () => { };
