@@ -44,7 +44,13 @@ const anyGreaterThan10 = (arrOfNumbers) => {
 };
 
 // Use your judgement to decide which array method to use!
-const roundAll = () => { };
+const roundAll = (arrOfNumbers) => {
+  if (arrOfNumbers.length === 0) {
+    return arrOfNumbers;
+  } else {
+    return arrOfNumbers.map((nums) => Math.round(nums))
+  }
+};
 
 const onlyStrings = () => { };
 
