@@ -2,14 +2,21 @@
 const getUserById = (users, id) => {
   const rightID = (users) => {
     if (users.id === id) {
-      return users
+      return users;
     };
   }
-  return users.find(rightID)
+  return users.find(rightID);
 };
 
 // findIndex
-const getIndexOfApple = () => { };
+const getIndexOfApple = (foods) => {
+  const appleIndex = (foods) => {
+    if (foods.name === "apple") {
+      return true;
+    };
+  }
+  return foods.findIndex(appleIndex);
+};
 
 // reduce
 const getSquaredTotal = () => { };
