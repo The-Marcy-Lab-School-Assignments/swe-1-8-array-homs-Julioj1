@@ -35,7 +35,13 @@ const hasOnlyEvenNumbers = (arrOfNumbers) => {
 };
 
 // some
-const anyGreaterThan10 = () => { };
+const anyGreaterThan10 = (arrOfNumbers) => {
+  if (arrOfNumbers.length === 0) {
+    return false;
+  } else {
+    return arrOfNumbers.some((nums) => nums > 10)
+  }
+};
 
 // Use your judgement to decide which array method to use!
 const roundAll = () => { };
