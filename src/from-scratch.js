@@ -1,5 +1,12 @@
 // find
-const getUserById = () => { };
+const getUserById = (users, id) => {
+  const rightID = (users) => {
+    if (users.id === id) {
+      return users
+    };
+  }
+  return users.find(rightID)
+};
 
 // findIndex
 const getIndexOfApple = () => { };
