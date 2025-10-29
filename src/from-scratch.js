@@ -69,7 +69,10 @@ const stringsToLength = (arrOfStrings) => {
   });
 };
 
-const totalGreaterThanGiven = () => { };
+const totalGreaterThanGiven = (arrOfNumbers, num) => {
+  const sum = arrOfNumbers.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+  return sum > num;
+};
 
 const numberOfLongWords = () => { };
 
