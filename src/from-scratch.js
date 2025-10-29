@@ -74,7 +74,11 @@ const totalGreaterThanGiven = (arrOfNumbers, num) => {
   return sum > num;
 };
 
-const numberOfLongWords = () => { };
+const numberOfLongWords = (arrOfWords) => {
+  let moreThan4 = arrOfWords.filter(words => words.length >= 4)
+  return moreThan4.length;
+
+};
 
 const numberOfCharacters = () => { };
 
