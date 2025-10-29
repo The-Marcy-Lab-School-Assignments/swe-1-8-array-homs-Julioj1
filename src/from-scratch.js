@@ -80,7 +80,18 @@ const numberOfLongWords = (arrOfWords) => {
 
 };
 
-const numberOfCharacters = () => { };
+const numberOfCharacters = (string) => {
+  const characters = {};
+  eachChar = string.split("");
+  eachChar.forEach((char) => {
+    if (characters[char]) {
+      characters[char]++;
+    } else {
+      characters[char] = 1;
+    }
+  })
+  return characters;
+};
 
 const removeJerkFromCompany = () => { };
 
