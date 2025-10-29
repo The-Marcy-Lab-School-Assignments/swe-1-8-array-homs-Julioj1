@@ -98,7 +98,9 @@ const removeJerkFromCompany = (arrOfPeople) => {
   arrOfPeople.splice(findTheBad, 1)
 };
 
-const chosenCoordinates = () => { };
+const chosenCoordinates = (arrOfCoordinates, num) => {
+  return arrOfCoordinates.find((coordinate) => coordinate[0] + coordinate[1] === num)
+};
 
 // Sorting Functions
 const sortWords = () => { };
