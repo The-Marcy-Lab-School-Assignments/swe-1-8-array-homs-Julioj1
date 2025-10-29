@@ -63,7 +63,11 @@ const onlyStrings = (arrOfValues) => {
   });
 };
 
-const stringsToLength = () => { };
+const stringsToLength = (arrOfStrings) => {
+  return arrOfStrings.map((element) => {
+    return element.length;
+  });
+};
 
 const totalGreaterThanGiven = () => { };
 
