@@ -93,7 +93,10 @@ const numberOfCharacters = (string) => {
   return characters;
 };
 
-const removeJerkFromCompany = () => { };
+const removeJerkFromCompany = (arrOfPeople) => {
+  const findTheBad = arrOfPeople.findIndex((people) => (people.personality === "jerk"))
+  arrOfPeople.splice(findTheBad, 1)
+};
 
 const chosenCoordinates = () => { };
 
