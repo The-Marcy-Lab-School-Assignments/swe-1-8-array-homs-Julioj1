@@ -52,7 +52,16 @@ const roundAll = (arrOfNumbers) => {
   }
 };
 
-const onlyStrings = () => { };
+const onlyStrings = (arrOfValues) => {
+  let onlyString = arrOfValues.filter((arrOfValues) => {
+    if (typeof arrOfValues == "string") {
+      return true;
+    }
+  })
+  return onlyString.map((arrOfValues) => {
+    return arrOfValues;
+  });
+};
 
 const stringsToLength = () => { };
 
