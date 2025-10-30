@@ -1,13 +1,5 @@
 const filterVipUsers = (users, vipUserIdsSet) => {
-  const vipUserObjects = [];
-
-  for (let i = 0; i < users.length; i++) {
-    const user = users[i];
-    if (vipUserIdsSet.has(user.id)) {
-      vipUserObjects.push(user);
-    }
-  }
-
+  const vipUserObjects = users.filter((user) => (vipUserIdsSet.has(user.id)))
   return vipUserObjects;
 };
 
