@@ -125,13 +125,17 @@ const sortNumbersBetter = (arrOfNumbers, isDescending) => {
 };
 
 const sortUsersByOrder = (arrOfUsers) => {
-  const copy = [...arrOfUsers];
-  copy.sort((a, b) => a.order - b.order);
+  const newArrOfUsers = [...arrOfUsers];
+  newArrOfUsers.sort((a, b) => a.order - b.order);
 
-  return copy;
+  return newArrOfUsers;
 };
 
-const sortUsersByName = () => { };
+const sortUsersByName = (arrOfUsers) => {
+  const newArrOfUsers = [...arrOfUsers];
+  newArrOfUsers.sort((a, b) => a.name.localeCompare(b.name, undefined, { sensitivity: 'base' }));
+  return newArrOfUsers;
+};
 
 module.exports = {
   getUserById,
