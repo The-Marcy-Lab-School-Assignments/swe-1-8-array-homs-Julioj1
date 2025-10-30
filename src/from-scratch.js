@@ -108,7 +108,10 @@ const sortWords = (arrOfWords) => {
   return sortedWords.sort();
 };
 
-const sortNumbers = () => { };
+const sortNumbers = (arrOfNumbers) => {
+  const sortedNumbers = [...arrOfNumbers]
+  return sortedNumbers.sort((a, b) => a - b);
+};
 
 const sortNumbersBetter = () => { };
 
