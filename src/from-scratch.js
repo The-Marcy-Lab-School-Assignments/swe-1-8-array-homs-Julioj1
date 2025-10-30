@@ -124,7 +124,12 @@ const sortNumbersBetter = (arrOfNumbers, isDescending) => {
   }
 };
 
-const sortUsersByOrder = () => { };
+const sortUsersByOrder = (arrOfUsers) => {
+  const copy = [...arrOfUsers];
+  copy.sort((a, b) => a.order - b.order);
+
+  return copy;
+};
 
 const sortUsersByName = () => { };
 
