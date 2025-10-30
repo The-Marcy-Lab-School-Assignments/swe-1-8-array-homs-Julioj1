@@ -103,7 +103,10 @@ const chosenCoordinates = (arrOfCoordinates, num) => {
 };
 
 // Sorting Functions
-const sortWords = () => { };
+const sortWords = (arrOfWords) => {
+  const sortedWords = arrOfWords.map((word) => word);
+  return sortedWords.sort();
+};
 
 const sortNumbers = () => { };
 
