@@ -4,14 +4,10 @@ const filterVipUsers = (users, vipUserIdsSet) => {
 };
 
 const multiplicativeAverage = (nums) => {
-  let product = 1;
-
-  for (let i = 0; i < nums.length; i++) {
-    const num = nums[i];
-    product *= num;
-  }
-
-  return product / nums.length;
+  const product = nums.reduce((accumulator, currentValue) => {
+    return accumulator *= currentValue;
+  }, 1)
+  return product / nums.length
 };
 
 module.exports = {
